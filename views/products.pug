@@ -1,0 +1,16 @@
+extends layout.pug
+block content
+	p.
+		#{title} #[br]
+		#{desc} #[br]
+	p.
+		detail #[br]
+		nama: #{nama.first} #{nama.last} #[br]
+		alamat lama: #{alamat.lama} #[br]
+		alamat baru: #{alamat.baru} #[br]
+	- var jumlah = '100'
+	if product > 100
+		h4 banyak
+	else
+		h4 sedikit
+

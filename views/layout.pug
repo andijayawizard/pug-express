@@ -1,4 +1,8 @@
+
 doctype html
+- var nama = 'andijaya'
+- var email = 'andijayawizard@gmail.com'
+
 html
 	head
 		title Staff Directory
@@ -11,9 +15,10 @@ html
 		main#main
 			h1.ui.center.aligned.header Staff Directory
 			.ui.container
+				include menu
 
 				block content
 
 			block footer
 				footer
-					p #{new Date().getFullYear()} andijaya inc.
+					p #{new Date().getFullYear()} #{nama} inc. more info: #{email}
