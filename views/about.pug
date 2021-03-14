@@ -4,3 +4,11 @@ block content
 	p.
 		#{title} #[br]
 		#{desc} #[br]
+
+	- var showLogin = true;
+	- var authorized = true;
+	- if (authorized && showLogin === true)
+			.welcome Selamat datang di web kami!
+	- else
+			.login
+				a(href='/login') Login

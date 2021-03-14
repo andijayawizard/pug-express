@@ -13,7 +13,7 @@ app.get('/about', (req, res, next) => {
 	var locals = {
 		title: 'About Us',
 		desc: 'Kami adalah sekelompok orang2an sawah',
-	}
+	};
 	res.render('about', locals);
 });
 app.get('/contact', (req, res) => {
