@@ -22,4 +22,4 @@ html
 
 			block footer
 				footer
-					p #{new Date().getFullYear()} #{nama} inc. more info: #{email}
+					p #{new Date().getFullYear()} #{nama} inc. more info: #[a(href=`mailto:${email}`) #{email}]
