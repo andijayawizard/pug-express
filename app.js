@@ -19,6 +19,9 @@ app.get('/about', (req, res, next) => {
 app.get('/contact', (req, res) => {
 	res.render('contact');
 });
+app.get('/roti', (req, res) => {
+	res.render('roti');
+});
 app.get('/products', (req, res) => {
 	var objects = {
 		title: 'Our Products',
