@@ -41,15 +41,25 @@ app.get('/roti', (req, res, next) => {
 			problem2: "balikan sama mantan",
 			problem3: "kencan sama mantan",
 			problem4: "kondangan kawinan tapi ngegandeng mantan",
-			problem5: "cicilan mobil dan rumah yang tiada kunjung lunas karena gengsi",
+			problem5: "cicilan mobil dan rumah yang tiada kunjung lunas karena kemakan gengsi",
 		},
 		daftar_problem_gua: {
 			problem1: "konflik yang tiada kunjung padam",
 		},
-		problem_kita_semua: {
+		daftar_problem_kita_semua: {
 			// masalah_lu[],
 			// masalah_gua[],
 		}
+	}
+	mereka = 'ada dh';
+	ane = 'ya ane'
+	ngerti = 'ngerti';
+	if (mereka===ngerti) {
+		console.log('sukur alhamdulilah..');
+	} else if (ane===ngerti) {
+		console.log('sukur alhamdulilah juga..');
+	} else {
+		console.log('ah, itu sih beban hidup lu..');
 	}
 	res.render('roti', problematika_hidup);
 });
@@ -58,3 +68,8 @@ app.listen(3000, () => {
 	console.log('listening on port 3000');
 });
 
+// tiada cara (cepat dan mudah) belajar program
+// satu2nya cara memahami kode script 
+// yaitu dengan memperlakukan mereka layaknya pasangan lu
+// mereka ga harus ngerti, tapi kita yang harus
+// asek..
