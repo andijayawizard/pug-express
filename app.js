@@ -51,16 +51,23 @@ app.get('/roti', (req, res, next) => {
 			// masalah_gua[],
 		}
 	}
-	mereka = 'ada dh';
-	ane = 'ya ane'
-	ngerti = 'ngerti';
+	let mereka = 'ada dh, siapa ke..';
+	let kita = 'ya kita'
+	let ngerti = 'mengerti dan memahami';
 	if (mereka===ngerti) {
 		console.log('sukur alhamdulilah..');
-	} else if (ane===ngerti) {
+	} else if (kita===ngerti) {
 		console.log('sukur alhamdulilah juga..');
 	} else {
 		console.log('ah, itu sih beban hidup lu..');
 	}
+	console.log(
+		'tiada cara (cepat dan mudah) #{ngerti} #{mereka}'+
+		'satu2nya cara #{ngerti} #{mereka}'+
+		'yaitu memperlakukan #{mereka} layaknya pasangan lu'+
+		'#{mereka} ga harus #{ngerti}, tapi kita harus'+
+		'asek..'
+	);
 	res.render('roti', problematika_hidup);
 });
 
@@ -68,8 +75,3 @@ app.listen(3000, () => {
 	console.log('listening on port 3000');
 });
 
-// tiada cara (cepat dan mudah) belajar program
-// satu2nya cara memahami kode script 
-// yaitu dengan memperlakukan mereka layaknya pasangan lu
-// mereka ga harus ngerti, tapi kita yang harus
-// asek..
