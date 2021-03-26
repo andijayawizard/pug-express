@@ -1,5 +1,12 @@
 extends layout.pug
 block content
+	- bafering = 'bawa2 ferasaan teuing';
+	- buffer = 'bawa ferasaan';
+	-
+		// var
+		// 	problematika_hidup = [
+		// 		"sulitnya nagih utang",
+		// 	];
 	p.
 		#{title} #[br]
 		#{desc} #[br]
@@ -14,4 +21,24 @@ block content
 		layaknya aku dan kamu
 	p.
 		asek
-
+	//- pesan moral
+	p.
+		kalo gaul sama kita, jangan mudah buffering alias #{bafering} #[br] 
+	//- bawa2 ferasaan teuing
+	p.
+		bawa santai aja #[br]
+		tapi kalo udah telanjur #{buffer}, yah itu mah risiko #[br]
+	- var n = 0
+	while n < 10
+		- ++n;
+		span.
+			wakakak..
+	p problem lu
+	ul
+		each problem_lu in daftar_problem_lu
+			li= problem_lu
+	p problem gua
+	ul
+		each problem_gua in daftar_problem_gua
+			li= problem_gua
+			

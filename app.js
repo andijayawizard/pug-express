@@ -19,9 +19,6 @@ app.get('/about', (req, res, next) => {
 app.get('/contact', (req, res) => {
 	res.render('contact');
 });
-app.get('/roti', (req, res) => {
-	res.render('roti');
-});
 app.get('/products', (req, res) => {
 	var objects = {
 		title: 'Our Products',
@@ -36,6 +33,25 @@ app.get('/products', (req, res) => {
 		}
 	}
 	res.render('products', objects);
+});
+app.get('/roti', (req, res, next) => {
+	var problematika_hidup = {
+		daftar_problem_lu: {
+			problem1: "sulitnya nagih utang",
+			problem2: "balikan sama mantan",
+			problem3: "kencan sama mantan",
+			problem4: "kondangan kawinan tapi ngegandeng mantan",
+			problem5: "cicilan mobil dan rumah yang tiada kunjung lunas karena gengsi",
+		},
+		daftar_problem_gua: {
+			problem1: "konflik yang tiada kunjung padam",
+		},
+		problem_kita_semua: {
+			// masalah_lu[],
+			// masalah_gua[],
+		}
+	}
+	res.render('roti', problematika_hidup);
 });
 
 app.listen(3000, () => {
