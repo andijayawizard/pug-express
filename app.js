@@ -47,8 +47,6 @@ app.get('/roti', (req, res, next) => {
 			problem1: "konflik yang tiada kunjung padam",
 		},
 		daftar_problem_kita_semua: {
-			// masalah_lu[],
-			// masalah_gua[],
 		}
 	}
 	let mereka = 'ada dh, siapa ke..';
@@ -62,11 +60,11 @@ app.get('/roti', (req, res, next) => {
 		console.log('ah, itu sih beban hidup lu..');
 	}
 	console.log(
-		'tiada cara (cepat dan mudah) #{ngerti} #{mereka}'+
-		'satu2nya cara #{ngerti} #{mereka}'+
-		'yaitu memperlakukan #{mereka} layaknya pasangan lu'+
-		'#{mereka} ga harus #{ngerti}, tapi kita harus'+
-		'asek..'
+		`tiada cara (cepat dan mudah) #{ngerti} #{mereka}`+
+		`satu2nya cara #{ngerti} #{mereka}`+
+		`yaitu memperlakukan #{mereka} layaknya pasangan lu`+
+		`#{mereka} ga harus #{ngerti}, tapi kita harus`+
+		`asek..`
 	);
 	res.render('roti', problematika_hidup);
 });
